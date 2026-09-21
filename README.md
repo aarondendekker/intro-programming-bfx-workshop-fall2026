@@ -1,6 +1,6 @@
-# Introduction to programming with R Workshop - Fall 2026
+# Introduction to Programming for Bioinformatics Workshop - Fall 2026
 
-Welcome! This repository holds the materials for a three-session introductory R workshop for the members of the Rogel and Blondy Center for Pancreatic Cancer. No prior programming experience is assumed.
+Welcome! This repository holds the materials for a three-session introductory programming workshop for the members of the Rogel and Blondy Center for Pancreatic Cancer. No prior programming experience is assumed.
 
 ## Start here: install R and RStudio
 
@@ -14,11 +14,11 @@ If you get stuck, see the troubleshooting section at the end of that guide, or [
 
 The workshop meets for three weekly 3-hour sessions.
 
-| Session | Date and time | Topics | Materials |
-|---------|---------------|--------|-----------|
-| 1 | October 7, 2026 | [EDIT: topics] | [`session1/`](session1/) |
-| 2 | [EDIT: date, time] | [EDIT: topics] | [`session2/`](session2/) |
-| 3 | [EDIT: date, time] | [EDIT: topics] | [`session3/`](session3/) |
+| Session | Date and time | Location | Topics | Materials |
+|---------|---------------|----------|--------|-----------|
+| 1 | October 7, 2026: 1 pm -4 pm | THSL 6000 | TBA | [`session1/`](session1/) |
+| 2 | October 14, 2026: 1 pm -4 pm | THSL 5000 | TBA | [`session2/`](session2/) |
+| 3 | October 21, 2026: 1 pm -4 pm | THSL 5000 | TBA | [`session3/`](session3/) |
 
 **Location:** [EDIT: room / building / video link]
 
