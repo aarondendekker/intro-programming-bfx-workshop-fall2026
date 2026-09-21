@@ -26,10 +26,10 @@ You need to install two free programs, **in this order**:
 
 1. Go to **<https://cloud.r-project.org/>**
 
+2. Click **Download R for Windows**.
+
    <!-- SCREENSHOT: CRAN home page with the "Download R for Windows" link visible -->
    ![CRAN home page with the Download R for Windows link](images/win-01-cran-home.png)
-
-2. Click **Download R for Windows**.
 
 3. Click **base** (also labeled "install R for the first time").
 
@@ -46,7 +46,7 @@ You need to install two free programs, **in this order**:
    <!-- SCREENSHOT: the R setup wizard, e.g. the "Ready to install" screen -->
    ![R setup wizard on Windows](images/win-04-r-installer-open.png)
 
-8. Click **Next** through the setup screens, **keeping all the default options**, then click **Finish**.
+6. Click **Next** through the setup screens, **keeping all the default options**, then click **Finish**.
 
    <!-- SCREENSHOT: the R setup wizard, e.g. the "Finished installing" screen -->
    <img src="images/win-05-r-installer-finish.png" width="500" alt="R setup wizard on Windows">
@@ -55,10 +55,12 @@ You need to install two free programs, **in this order**:
 
 1. Go to **<https://posit.co/download/rstudio-desktop/>**
 
-   <!-- SCREENSHOT: the Posit RStudio Desktop home page with the downloads button highlighted -->
-   ![Posit download page for RStudio Desktop](images/win-06-posit-homepage.png)
+2. Click **Direct Downloads (Open Source)** 
    
-3. Make sure R is already installed (Part 1), then click **Download RStudio Desktop for Windows**.
+   <!-- SCREENSHOT: the Posit RStudio Desktop home page with the downloads button highlighted -->
+   ![Posit download page for RStudio Desktop](images/win-06-posit-direct-downloads.png)
+   
+3. Make sure R is already installed (Part 1), then click the RStudio download file ending in `.exe` underneath the **RStudio IDE** heading.
 
    <!-- SCREENSHOT: the Posit RStudio Desktop download page with the Windows download button highlighted -->
    ![Posit download page for RStudio Desktop](images/win-07-posit-download.png)
@@ -116,17 +118,22 @@ You need to know this to pick the right R installer.
 
 1. Go to **<https://posit.co/download/rstudio-desktop/>**
 
-2. Make sure R is already installed (should show up in the Applications folder), then click **Download RStudio Desktop for macOS**.
+2. Click **Direct Downloads (Open Source)** 
+   
+   <!-- SCREENSHOT: the Posit RStudio Desktop home page with the downloads button highlighted -->
+   ![Posit download page for RStudio Desktop](images/win-06-posit-direct-downloads.png)
+
+3. Make sure R is already installed (should show up in the Applications folder), then click **Download RStudio Desktop for macOS**.
 
    <!-- SCREENSHOT: the Posit RStudio Desktop download page with the macOS download button highlighted -->
    ![Posit download page for RStudio Desktop](images/mac-05-posit-download.png)
 
-3. Open the downloaded `.dmg` file. **Drag the RStudio icon into the Applications folder** in the window that appears.
+4. Open the downloaded `.dmg` file. **Drag the RStudio icon into the Applications folder** in the window that appears.
 
    <!-- SCREENSHOT: the RStudio .dmg window showing the RStudio icon and the Applications folder shortcut -->
    ![Dragging RStudio into Applications](images/mac-06-drag-to-applications.png)
 
-4. Open **RStudio** from your Applications folder (or Launchpad). If macOS asks whether you are sure you want to open an app downloaded from the internet, click **Open**. Then continue to [Check that it works](#check-that-it-works).
+5. Open **RStudio** from your Applications folder (or Launchpad). If macOS asks whether you are sure you want to open an app downloaded from the internet, click **Open**. Then continue to [Check that it works](#check-that-it-works).
 
    <!-- SCREENSHOT: the macOS Applications folder or Launchpad showing RStudio -->
    ![RStudio in the Applications folder](images/mac-07-applications.png)
