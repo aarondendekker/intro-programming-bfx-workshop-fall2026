@@ -89,16 +89,16 @@ You need to know this to pick the right R installer.
    - **Intel** → you have an **Intel** Mac
 
 <!-- SCREENSHOT: the "About This Mac" window showing the Chip or Processor line -->
-![About This Mac window showing the chip](images/mac-01-about-this-mac.png)
+<img src="images/mac-01-about-this-mac.png" width="250" alt="About This Mac window showing the chip">
 
 ### Part 1: Install R
 
 1. Go to **<https://cloud.r-project.org/>**
 
+2. Click **Download R for macOS**.
+
    <!-- SCREENSHOT: CRAN home page with the "Download R for macOS" link visible -->
    ![CRAN home page with the Download R for macOS link](images/mac-02-cran-home.png)
-
-2. Click **Download R for macOS**.
 
 3. Under **Latest release**, click the `.pkg` file that matches your Mac:
    - Apple silicon: the file with **arm64** in its name
@@ -107,12 +107,12 @@ You need to know this to pick the right R installer.
    <!-- SCREENSHOT: the "R for macOS" page with the arm64 and x86_64 .pkg links visible -->
    ![CRAN macOS page showing arm64 and Intel installers](images/mac-03-cran-pkg.png)
 
-4. Open the downloaded `.pkg` file and click **Continue** / **Install** through the setup screens, accepting the defaults. Enter your Mac password if asked.
+3. Open the downloaded `.pkg` file and click **Continue** / **Install** through the setup screens, accepting the defaults. Enter your Mac password if asked.
 
    <!-- SCREENSHOT: the R macOS installer window -->
-   ![R installer on macOS](images/mac-04-r-installer.png)
-
-5. When it finishes, macOS may offer to move the installer to the Trash. That is fine – it only removes the installer file, not R.
+   <img src="images/mac-04-r-installer.png" width="500" alt="R installer on macOSp">
+   
+4. When it finishes, macOS may offer to move the installer to the Trash. That is fine – it only removes the installer file, not R.
    
 ### Part 2: Install RStudio Desktop
 
@@ -123,7 +123,7 @@ You need to know this to pick the right R installer.
    <!-- SCREENSHOT: the Posit RStudio Desktop home page with the downloads button highlighted -->
    ![Posit download page for RStudio Desktop](images/win-06-posit-direct-downloads.png)
 
-3. Make sure R is already installed (should show up in the Applications folder), then click **Download RStudio Desktop for macOS**.
+3. Make sure R is already installed (Part 1), then click the RStudio download file ending in `.dmg` underneath the **RStudio IDE** heading.
 
    <!-- SCREENSHOT: the Posit RStudio Desktop download page with the macOS download button highlighted -->
    ![Posit download page for RStudio Desktop](images/mac-05-posit-download.png)
