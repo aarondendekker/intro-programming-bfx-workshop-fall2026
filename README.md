@@ -12,15 +12,13 @@ If you get stuck, see the troubleshooting section at the end of that guide, or [
 
 ## Schedule
 
-The workshop meets for three weekly 3-hour sessions.
+The workshop meets for three weekly 3-hour sessions. All sessions will be held in the Taubman Health Science Library. Please note that the room changes after the first session.
 
 | Session | Date and time | Location | Topics | Materials |
 |---------|---------------|----------|--------|-----------|
 | 1 | October 7, 2026: 1 pm -4 pm | THSL 6000 | TBA | [`session1/`](session1/) |
 | 2 | October 14, 2026: 1 pm -4 pm | THSL 5000 | TBA | [`session2/`](session2/) |
 | 3 | October 21, 2026: 1 pm -4 pm | THSL 5000 | TBA | [`session3/`](session3/) |
-
-**Location Note:** Sessions will be held in the Taubman Health Science Library. Please note that the room changes after the first session.
 
 ## Getting the materials
 
@@ -46,11 +44,11 @@ Materials may be updated between sessions, so re-download the ZIP if you want th
 └── session3/
 ```
 
-The example data in this repository is public or fully de-identified. **Please do not upload patient data or unpublished data to this repository.**
+The example data in this repository is a synthetically generated dataset designed to mimic the characteristics of human clinical data. It contains no real patient information and is intended solely for educational and benchmarking purposes.. **Please do not upload patient data or unpublished data to this repository.**
 
 ## Getting help
 
-- Questions about the materials or setup: [open an issue](../../issues) (free GitHub account required) or email [EDIT: contact email]
+- Questions about the materials or setup: Email me @ adendekk@umich.edu or [open an issue](../../issues) (free GitHub account required) 
 - During the workshop: just ask!
 
 ## Instructors
