@@ -110,7 +110,7 @@ You need to know this to pick the right R installer.
 3. Open the downloaded `.pkg` file and click **Continue** / **Install** through the setup screens, accepting the defaults. Enter your Mac password if asked.
 
    <!-- SCREENSHOT: the R macOS installer window -->
-   <img src="images/mac-04-r-installer.png" width="500" alt="R installer on macOSp">
+   <img src="images/mac-04-r-installer.png" width="500" alt="R installer on macOS">
    
 4. When it finishes, macOS may offer to move the installer to the Trash. That is fine – it only removes the installer file, not R.
    
@@ -131,13 +131,12 @@ You need to know this to pick the right R installer.
 4. Open the downloaded `.dmg` file. **Drag the RStudio icon into the Applications folder** in the window that appears.
 
    <!-- SCREENSHOT: the RStudio .dmg window showing the RStudio icon and the Applications folder shortcut -->
-   ![Dragging RStudio into Applications](images/mac-06-drag-to-applications.png)
-
+   <img src="images/mac-06-drag-to-applications.png" width="400" alt="Dragging RStudio into Applications">
+   
 5. Open **RStudio** from your Applications folder (or Launchpad). If macOS asks whether you are sure you want to open an app downloaded from the internet, click **Open**. Then continue to [Check that it works](#check-that-it-works).
 
    <!-- SCREENSHOT: the macOS Applications folder or Launchpad showing RStudio -->
-   ![RStudio in the Applications folder](images/mac-07-applications.png)
-
+   <img src="images/mac-07-applications.png" width="250" alt="RStudio in the Applications folder">
 ---
 
 ## Check that it works
