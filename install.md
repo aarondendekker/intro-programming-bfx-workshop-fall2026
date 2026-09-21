@@ -50,6 +50,7 @@ You need to install two free programs, **in this order**:
 
    <!-- SCREENSHOT: the R setup wizard, e.g. the "Finished installing" screen -->
    ![R setup wizard on Windows](<img src="images/win-05-r-installer_finish.png" width="600">)
+   <img src="images/win-05-r-installer_finish" width="600" alt="CRAN home page with the Download R for Windows link">
    
 
 ### Part 2: Install RStudio Desktop
