@@ -20,7 +20,7 @@ The workshop meets for three weekly 3-hour sessions.
 | 2 | October 14, 2026: 1 pm -4 pm | THSL 5000 | TBA | [`session2/`](session2/) |
 | 3 | October 21, 2026: 1 pm -4 pm | THSL 5000 | TBA | [`session3/`](session3/) |
 
-**Location:** [EDIT: room / building / video link]
+**Location Note:** Sessions will be held in the Taubman Health Science Library. Please note that the room changes after the first session.
 
 ## Getting the materials
 
