@@ -49,7 +49,8 @@ You need to install two free programs, **in this order**:
 8. Click **Next** through the setup screens, **keeping all the default options**, then click **Finish**.
 
    <!-- SCREENSHOT: the R setup wizard, e.g. the "Finished installing" screen -->
-   ![R setup wizard on Windows](images/win-05-r-installer_finish.png)
+   ![R setup wizard on Windows](<img src="images/win-05-r-installer_finish.png" width="600">)
+   
 
 ### Part 2: Install RStudio Desktop
 
