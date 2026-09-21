@@ -1,2 +1,65 @@
 # Introduction to programming with R Workshop - Fall 2026
 Workshop materials are licensed under CC BY 4.0
+
+Welcome! This repository holds the materials for a three-session introductory R workshop for [EDIT: audience, e.g. trainees and residents]. No prior programming experience is assumed.
+
+## Start here: install R and RStudio
+
+**Before session 1**, please follow the setup guide:
+
+👉 **[Installing R and RStudio](install.md)** (Windows and macOS)
+
+If you get stuck, see the troubleshooting section at the end of that guide, or [open an issue](../../issues).
+
+## Schedule
+
+The workshop meets for three weekly 3-hour sessions.
+
+| Session | Date and time | Topics | Materials |
+|---------|---------------|--------|-----------|
+| 1 | [EDIT: date, time] | [EDIT: topics] | [`session1/`](session1/) |
+| 2 | [EDIT: date, time] | [EDIT: topics] | [`session2/`](session2/) |
+| 3 | [EDIT: date, time] | [EDIT: topics] | [`session3/`](session3/) |
+
+**Location:** [EDIT: room / building / video link]
+
+## Getting the materials
+
+You do not need to know Git or GitHub to use this repository.
+
+1. Click the green **Code** button near the top of this page.
+2. Choose **Download ZIP**.
+3. Unzip the folder somewhere easy to find, such as your Documents folder.
+4. In RStudio, open a session's files from the unzipped folder.
+
+Materials may be updated between sessions, so re-download the ZIP if you want the latest version.
+
+## What's in this repository
+
+```
+.
+├── README.md      # this page
+├── install.md     # R and RStudio setup guide
+├── images/        # screenshots used in the setup guide
+├── data/          # example datasets used in the sessions
+├── session1/
+├── session2/
+└── session3/
+```
+
+The example data in this repository is public or fully de-identified. **Please do not upload patient data or unpublished data to this repository.**
+
+## Getting help
+
+- Questions about the materials or setup: [open an issue](../../issues) (free GitHub account required) or email [EDIT: contact email]
+- During the workshop: just ask!
+
+## Instructors
+
+[EDIT: instructor name(s), affiliation]
+
+## License
+
+Written materials and images are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You may share and adapt them with appropriate credit.
+
+<!-- EDIT: if you also add a separate license for code (e.g. MIT), say so here. -->
