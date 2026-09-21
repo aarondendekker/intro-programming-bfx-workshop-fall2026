@@ -1,7 +1,6 @@
 # Introduction to programming with R Workshop - Fall 2026
-Workshop materials are licensed under CC BY 4.0
 
-Welcome! This repository holds the materials for a three-session introductory R workshop for [EDIT: audience, e.g. trainees and residents]. No prior programming experience is assumed.
+Welcome! This repository holds the materials for a three-session introductory R workshop for the members of the Rogel and Blondy Center for Pancreatic Cancer. No prior programming experience is assumed.
 
 ## Start here: install R and RStudio
 
@@ -17,7 +16,7 @@ The workshop meets for three weekly 3-hour sessions.
 
 | Session | Date and time | Topics | Materials |
 |---------|---------------|--------|-----------|
-| 1 | [EDIT: date, time] | [EDIT: topics] | [`session1/`](session1/) |
+| 1 | October 7, 2026 | [EDIT: topics] | [`session1/`](session1/) |
 | 2 | [EDIT: date, time] | [EDIT: topics] | [`session2/`](session2/) |
 | 3 | [EDIT: date, time] | [EDIT: topics] | [`session3/`](session3/) |
 
