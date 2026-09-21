@@ -44,13 +44,13 @@ You need to install two free programs, **in this order**:
 5. Open the downloaded file (it ends in `.exe`). If Windows asks whether to allow changes, click **Yes**.
   
    <!-- SCREENSHOT: the R setup wizard, e.g. the "Ready to install" screen -->
-   ![R setup wizard on Windows](images/win-04-r-installer_open.png)
+   ![R setup wizard on Windows](images/win-04-r-installer-open.png)
 
 8. Click **Next** through the setup screens, **keeping all the default options**, then click **Finish**.
 
    <!-- SCREENSHOT: the R setup wizard, e.g. the "Finished installing" screen -->
-   ![R setup wizard on Windows](<img src="images/win-05-r-installer_finish.png" width="600">)
-   <img src="images/win-05-r-installer_finish" width="600" alt="CRAN home page with the Download R for Windows link">
+   ![R setup wizard on Windows](images/win-05-r-installer-finish.png)
+   <img src="images/win-05-r-installer-finish" width="600" alt="CRAN home page with the Download R for Windows link">
    
 
 ### Part 2: Install RStudio Desktop
