@@ -49,28 +49,29 @@ You need to install two free programs, **in this order**:
 8. Click **Next** through the setup screens, **keeping all the default options**, then click **Finish**.
 
    <!-- SCREENSHOT: the R setup wizard, e.g. the "Finished installing" screen -->
-   ![R setup wizard on Windows](images/win-05-r-installer-finish.png)
-   <img src="images/win-05-r-installer-finish" width="600" alt="CRAN home page with the Download R for Windows link">
-   
+   <img src="images/win-05-r-installer-finish.png" width="500" alt="R setup wizard on Windows">
 
 ### Part 2: Install RStudio Desktop
 
 1. Go to **<https://posit.co/download/rstudio-desktop/>**
 
-2. Make sure R is already installed (Part 1), then click **Download RStudio Desktop for Windows**.
+   <!-- SCREENSHOT: the Posit RStudio Desktop home page with the downloads button highlighted -->
+   ![Posit download page for RStudio Desktop](images/win-06-posit-homepage.png)
+   
+3. Make sure R is already installed (Part 1), then click **Download RStudio Desktop for Windows**.
 
    <!-- SCREENSHOT: the Posit RStudio Desktop download page with the Windows download button highlighted -->
-   ![Posit download page for RStudio Desktop](images/win-05-posit-download.png)
+   ![Posit download page for RStudio Desktop](images/win-07-posit-download.png)
 
-3. Open the downloaded file (it ends in `.exe`), click **Next** through the setup screens with all the default options, then click **Install** and **Finish**.
+4. Open the downloaded file (it ends in `.exe`), click **Next** through the setup screens with all the default options, then click **Install** and **Finish**.
 
    <!-- SCREENSHOT: the RStudio setup wizard on Windows -->
-   ![RStudio setup wizard on Windows](images/win-06-rstudio-installer.png)
+   ![RStudio setup wizard on Windows](images/win-08-rstudio-installer.png)
 
-4. Open **RStudio** from the Start menu, then continue to [Check that it works](#check-that-it-works).
+5. Open **RStudio** from the Start menu, then continue to [Check that it works](#check-that-it-works).
 
    <!-- SCREENSHOT: the Windows Start menu with RStudio in the search box or app list -->
-   ![Finding RStudio in the Windows Start menu](images/win-07-start-menu.png)
+   ![Finding RStudio in the Windows Start menu](images/win-09-start-menu.png)
 
 ---
 
