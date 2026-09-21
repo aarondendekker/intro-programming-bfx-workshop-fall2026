@@ -105,12 +105,12 @@ You need to know this to pick the right R installer.
    ![R installer on macOS](images/mac-04-r-installer.png)
 
 5. When it finishes, macOS may offer to move the installer to the Trash. That is fine – it only removes the installer file, not R.
-
+   
 ### Part 2: Install RStudio Desktop
 
 1. Go to **<https://posit.co/download/rstudio-desktop/>**
 
-2. Make sure R is already installed (Part 1), then click **Download RStudio Desktop for macOS**.
+2. Make sure R is already installed (should show up in the Applications folder), then click **Download RStudio Desktop for macOS**.
 
    <!-- SCREENSHOT: the Posit RStudio Desktop download page with the macOS download button highlighted -->
    ![Posit download page for RStudio Desktop](images/mac-05-posit-download.png)
