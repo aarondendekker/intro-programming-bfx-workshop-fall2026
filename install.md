@@ -159,7 +159,8 @@ You should see:
 ```
 
 <!-- SCREENSHOT: the Console after typing 1 + 1 and pressing Enter, showing [1] 2 -->
-![Console showing the result of 1 + 1](images/check-02-console-test.png)
+
+<img src="images/check-02-console-test.png" width="400" alt="Console showing the result of 1 + 1">
 
 If you see that, you are ready for the workshop. 🎉
 
