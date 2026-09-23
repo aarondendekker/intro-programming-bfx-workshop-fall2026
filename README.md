@@ -53,7 +53,7 @@ The example data in this repository is a synthetically generated dataset designe
 
 ## Instructors
 
-[EDIT: instructor name(s), affiliation]
+Aaron denDekker, PhD - adendekk@umich.edu
 
 ## License
 
