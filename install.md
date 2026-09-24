@@ -75,7 +75,7 @@ You need to install two free programs, **in this order**:
 6. Open **RStudio** from the Start menu, then continue to [Check that it works](#check-that-it-works).
 
    <!-- SCREENSHOT: the Windows Start menu with RStudio in the search box or app list -->
-   
+   <img src="images/win-10-start-menu.png" width="300" alt="Finding RStudio in the Windows Start menu">
  
 ---
 
