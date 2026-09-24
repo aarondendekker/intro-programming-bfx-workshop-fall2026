@@ -44,12 +44,12 @@ You need to install two free programs, **in this order**:
 5. Open the downloaded file (it ends in `.exe`). If Windows asks whether to allow changes, click **Yes**.
   
    <!-- SCREENSHOT: the R setup wizard, e.g. the "Ready to install" screen -->
-   ![R setup wizard on Windows](images/win-04-r-installer-open.png)
+   <img src="images/win-04-r-installer-open.png" width="200" alt="R setup wizard on Windows">  
 
-6. Click **Next** through the setup screens, **keeping all the default options**, then click **Finish**.
+7. Click **Next** through the setup screens, **keeping all the default options**, then click **Finish**.
 
    <!-- SCREENSHOT: the R setup wizard, e.g. the "Finished installing" screen -->
-   <img src="images/win-05-r-installer-finish.png" width="500" alt="R setup wizard on Windows">
+   <img src="images/win-05-r-installer.png" width="500" alt="R setup wizard on Windows">
 
 ### Part 2: Install RStudio Desktop
 
@@ -68,13 +68,15 @@ You need to install two free programs, **in this order**:
 4. Open the downloaded file (it ends in `.exe`), click **Next** through the setup screens with all the default options, then click **Install** and **Finish**.
 
    <!-- SCREENSHOT: the RStudio setup wizard on Windows -->
-   ![RStudio setup wizard on Windows](images/win-08-rstudio-installer.png)
+   <img src="images/win-08-rstudio-installer.png" width="250" alt="R setup wizard on Windows"> <br><br>
+   <img src="images/win-09-rstudio-installer.png" width="500" alt="R setup wizard on Windows">
 
-5. Open **RStudio** from the Start menu, then continue to [Check that it works](#check-that-it-works).
+
+6. Open **RStudio** from the Start menu, then continue to [Check that it works](#check-that-it-works).
 
    <!-- SCREENSHOT: the Windows Start menu with RStudio in the search box or app list -->
-   ![Finding RStudio in the Windows Start menu](images/win-09-start-menu.png)
-
+   <img src="images/win-10-start-menu.png" width="300" alt="Finding RStudio in the Windows Start menu">
+ 
 ---
 
 ## macOS
