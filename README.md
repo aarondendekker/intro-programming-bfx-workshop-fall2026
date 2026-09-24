@@ -1,6 +1,6 @@
 # Introduction to Programming for Bioinformatics Workshop - Fall 2026
 
-Welcome! This repository holds the materials for a three-session introductory programming workshop for the members of the Rogel and Blondy Center for Pancreatic Cancer. No prior programming experience is assumed.
+Welcome! This repository holds the materials for a three-session introductory programming workshop for the members of the Rogel and Blondy Center for Pancreatic Cancer. No prior programming experience is assumed. 
 
 ## Start here: install R and RStudio
 
@@ -38,10 +38,10 @@ Materials may be updated between sessions, so re-download the ZIP if you want th
 ├── README.md      # this page
 ├── install.md     # R and RStudio setup guide
 ├── images/        # screenshots used in the setup guide
-├── data/          # example datasets used in the sessions
-├── session1/
-├── session2/
-└── session3/
+├── data/          # example datasets used in the sessions (coming soon)
+├── session1/      # 
+├── session2/      # 
+└── session3/      # 
 ```
 
 The example data in this repository is a synthetically generated dataset designed to mimic the characteristics of human clinical data. It contains no real patient information and is intended solely for educational and benchmarking purposes.. **Please do not upload patient data or unpublished data to this repository.**
