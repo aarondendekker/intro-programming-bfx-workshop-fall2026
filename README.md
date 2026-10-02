@@ -15,10 +15,10 @@ If you get stuck, see the troubleshooting section at the end of that guide, or [
 The workshop meets for three weekly 3-hour sessions. All sessions will be held in the Taubman Health Science Library. Please note that the room changes after the first session.
 
 | Session | Date and time | Location | Topics | Materials |
-|---------|---------------|----------|--------|-----------|
-| 1 | October 7, 2026: 1 pm -4 pm | THSL 6000 | TBA | [`session1/`](session1/) |
-| 2 | October 14, 2026: 1 pm -4 pm | THSL 5000 | TBA | [`session2/`](session2/) |
-| 3 | October 21, 2026: 1 pm -4 pm | THSL 5000 | TBA | [`session3/`](session3/) |
+|:---------:|:---------------|:----------:|:----------|:-----------:|
+| 1 | October 7, 2026: 1 - 4 pm | THSL 6000 | Programming foundations: data types, vectors, factors, data frames | [`session1/`](session1/) |
+| 2 | October 14, 2026: 1 - 4 pm | THSL 5000 | Functions, loops, reading real files into R | [`session2/`](session2/) |
+| 3 | October 21, 2026: 1 - 4 pm | THSL 5000 | Cleaning, joining, and reshaping data for analysis tools | [`session3/`](session3/) |
 
 ## Getting the materials
 
