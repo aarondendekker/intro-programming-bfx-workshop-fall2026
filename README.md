@@ -20,9 +20,9 @@ The workshop meets for three weekly 3-hour sessions. All sessions will be held i
 | 2 | October 14, 2026: 1 - 4 pm | THSL 5000 | Functions, loops, reading real files into R | [`session2/`](session2/) |
 | 3 | October 21, 2026: 1 - 4 pm | THSL 5000 | Cleaning, joining, and reshaping data for analysis tools | [`session3/`](session3/) |
 
-## Ground rules
+## Ground rules on the use of AI
 
-**Use of AI tools (ChatGPT, Claude, etc.):** AI is not prohibited, but the goal of this workshop is to build your own understanding of how code works. Write your own code first, and use AI only as a learning aid, for example to explain an error message or a piece of syntax. Always test and validate anything it gives you, and never paste patient or unpublished data into an AI tool.
+**Use of AI tools (ChatGPT, Claude, etc.):** AI is not prohibited, but the goal of this workshop is to build your own understanding of how code works. Write your own code first, and use AI only as a learning aid, e.g., to explain an error message. Always test and validate anything it gives you, and never paste patient or unpublished data into an AI tool. See the [AI Use Policy](AI_policy.md) for more details.
 
 👉 **[Read the full AI policy](AI_policy.md)**
 
