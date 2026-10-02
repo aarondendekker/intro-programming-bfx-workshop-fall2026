@@ -20,6 +20,12 @@ The workshop meets for three weekly 3-hour sessions. All sessions will be held i
 | 2 | October 14, 2026: 1 - 4 pm | THSL 5000 | Functions, loops, reading real files into R | [`session2/`](session2/) |
 | 3 | October 21, 2026: 1 - 4 pm | THSL 5000 | Cleaning, joining, and reshaping data for analysis tools | [`session3/`](session3/) |
 
+## Ground rules
+
+**Use of AI tools (ChatGPT, Claude, etc.):** AI is not prohibited, but the goal of this workshop is to build your own understanding of how code works. Write your own code first, and use AI only as a learning aid, for example to explain an error message or a piece of syntax. Always test and validate anything it gives you, and never paste patient or unpublished data into an AI tool.
+
+👉 **[Read the full AI policy](AI_policy.md)**
+
 ## Getting the materials
 
 You do not need to know Git or GitHub to use this repository.
@@ -35,20 +41,21 @@ Materials may be updated between sessions, so re-download the ZIP if you want th
 
 ```
 .
-├── README.md      # this page
-├── install.md     # R and RStudio setup guide
-├── images/        # screenshots used in the setup guide
-├── data/          # example datasets used in the sessions (coming soon)
-├── session1/      # 
-├── session2/      # 
-└── session3/      # 
+├── README.md       # this page
+├── install.md      # R and RStudio setup guide
+├── AI_policy.md    # policy on the use of AI tools
+├── images/         # screenshots used in the setup guide
+├── data/           # example datasets used in the sessions (coming soon)
+├── session1/       # materials for session 1
+├── session2/       # materials for session 2
+└── session3/       # materials for session 3
 ```
 
-The example data in this repository is a synthetically generated dataset designed to mimic the characteristics of human clinical data. It contains no real patient information and is intended solely for educational and benchmarking purposes.. **Please do not upload patient data or unpublished data to this repository.**
+The example data in this repository is a synthetically generated dataset designed to mimic the characteristics of human clinical data. It contains no real patient information and is intended solely for educational purposes. **Please do not upload patient data or unpublished data to this repository.**
 
 ## Getting help
 
-- Questions about the materials or setup: Email me @ adendekk@umich.edu or [open an issue](../../issues) (free GitHub account required) 
+- Questions about the materials or setup: email me at adendekk@umich.edu or [open an issue](../../issues) (free GitHub account required)
 - During the workshop: just ask!
 
 ## Instructors
