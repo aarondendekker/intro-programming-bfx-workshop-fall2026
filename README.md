@@ -22,7 +22,7 @@ The workshop meets for three weekly 3-hour sessions. All sessions will be held i
 
 ## Ground rules on the use of AI
 
-**Use of AI tools (ChatGPT, Claude, etc.):** AI is not prohibited, but the goal of this workshop is to build your own understanding of how code works. Write your own code first, and use AI only as a learning aid, e.g., to explain an error message. Always test and validate anything it gives you, and never paste patient or unpublished data into an AI tool. See the [AI Use Policy](AI_policy.md) for more details.
+**Use of AI tools (ChatGPT, Claude, etc.):** AI is not prohibited, but the goal of this workshop is to build your own understanding of how code works. Write your own code first, and use AI only as a learning aid, e.g., to explain an error message. Always test and validate anything it gives you, and never paste patient or unpublished data into an AI tool.
 
 👉 **[Read the full AI policy](AI_policy.md)**
 
