@@ -41,14 +41,15 @@ Materials may be updated between sessions, so re-download the ZIP if you want th
 
 ```
 .
-├── README.md       # this page
-├── install.md      # R and RStudio setup guide
-├── AI_policy.md    # policy on the use of AI tools
-├── images/         # screenshots used in the setup guide
-├── data/           # example datasets used in the sessions (coming soon)
-├── session1/       # materials for session 1
-├── session2/       # materials for session 2
-└── session3/       # materials for session 3
+├── README.md         # this page
+├── install.md        # R and RStudio setup guide
+├── AI_policy.md      # policy on the use of AI tools
+├── RStudio_guide.pdf # step-by-step use guide for RStudio
+├── images/           # screenshots used in the setup guide
+├── data/             # example datasets used in the sessions (coming soon)
+├── session1/         # materials for session 1
+├── session2/         # materials for session 2
+└── session3/         # materials for session 3
 ```
 
 The example data in this repository is a synthetically generated dataset designed to mimic the characteristics of human clinical data. It contains no real patient information and is intended solely for educational purposes. **Please do not upload patient data or unpublished data to this repository.**
