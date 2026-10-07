@@ -178,21 +178,6 @@ is.list(cohort)
 length(cohort)
 
 
-# 5. Wrap-up --------------------------------------------------
-
-# Common gotchas so far:
-#   - <- assigns, == compares. (= assigns in some places; avoid it.)
-#   - R counts from 1, not 0.
-#   - NA is contagious: most calculations that touch an NA return NA
-#     unless you say na.rm = TRUE.
-#   - A vector holds ONE type. Mixing types silently converts everything
-#     (usually to text).
-#   - Factor levels default to alphabetical order, which may not be
-#     the reference you want.
-#   - [ ] gives back the same kind of thing you started with;
-#     [[ ]] and $ pull one element out.
-
-# Muddiest point from today (one sentence):
+# 5. Wrap-up & Take-home exercises --------------------------------------------------
 
 
-# Homework 1 is handed out separately.
