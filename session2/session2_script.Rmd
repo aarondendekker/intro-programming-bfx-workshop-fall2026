@@ -1,0 +1,559 @@
+---
+title: "Session 2"
+subtitle: "Matrices, Dataframes, Loops, and Functions"
+output: 
+  html_document
+---
+
+### How to use this file:
+
+* Code is run inside code "chunks". Everything outside the code chunks is considered plain text.
+* Add new code chunks: Windows: Ctrl+Alt+i OR Mac: option+command+i
+* Run the entire code chunk: click the green arrow in the top right of the code chunk.
+* Run the line of code where your cursor is: Windows: Ctrl+Enter OR Mac: Cmd+Enter
+* **Inside code chunks**, lines that start with \# are comments. R ignores them
+* **Outside code chunks**, lines that start with \# are headers. The more #s in a row, the smaller the header:
+
+# Header 1
+## Header 2
+### Header 3 ...
+
+-----
+
+# 1. Review
+#### Basic operations
+
+```{r}
+1:5
+c(1,3,5)
+c(1,3,5:10)
+c("Kras", "Tp53", "Smad4")
+c(TRUE, FALSE, TRUE)
+```
+
+#### Simple mathematic operations
+
+```{r}
+2 + 3 
+3 - 2 
+2 * 3 
+5 / 2
+```
+
+#### Niche operations:
+
+```{r}
+10 %% 3 # modulus operator: returns remainder
+10 %/% 3 # integer division operator: returns the integer quotient
+```
+
+#### Creating named objects
+
+```{r}
+a <- 12 # <- is the assignmernt operator
+3 * a
+```
+
+```{r}
+b <- 1:6
+3 * b
+```
+
+```{r}
+x <- c(1, 3, 5)
+x
+```
+
+#### Vectorized operations
+
+```{r}
+a + b
+```
+
+#### R also does some weird stuff
+
+```{r}
+x + b # data recycling
+```
+
+R assigns value to character string based on the position in standard alphabetical order
+
+```{r}
+"lion" < "zebra"
+"apricot" < "apple"
+```
+
+This also applies to numerics as strings:
+
+```{r}
+"100" < "99"
+```
+
+#### Coercion
+
+R attempts to coerce data types on the fly. It can get weird.
+
+```{r error=TRUE}
+typeof("26.2")
+as.double("26.2")
+as.integer("26.2")
+sum(2, "13.1")
+as.double("seven")
+```
+
+R coerces logical values to numeric integer values (TRUE = 1, FALSE = 0)
+
+```{r}
+typeof(TRUE)
+TRUE + 1
+sum(TRUE, FALSE, FALSE, TRUE)
+```
+
+#### NA values
+
+**NA values are "contagious"**
+
+```{r}
+y <- c(1, 5, NA, 3)
+y*2
+sum(y)
+```
+
+# 2. Walk-through of take-home exercises
+
+1.  **Predict, then run, then explain:**.\
+
+```{r}
+c(1, "a", TRUE)
+```
+
+```{r}
+1:3 + 1:6
+```
+
+```{r}
+sum(c(TRUE, FALSE, TRUE))
+```
+
+```{r}
+mean(c(1, NA, 3))
+```
+
+```{r}
+"10" < "9"
+```
+
+2.  **Fix the broken code snippets.** Each snippet below has exactly one bug. Figure out what's wrong, fix it, and in a comment explain what the error message meant.
+
+**Snippet A**
+
+```{r error=TRUE}
+expr <- c(TP53 = 120, KRAS = 340, EGFR = 88, GENE = NA)
+print(expr["TP53"] = 100)
+```
+
+**Snippet B**
+
+```{r error=TRUE}
+gene <- "TP53
+print(gene)
+```
+
+**Snippet C**
+
+```{r error=TRUE}
+Age <- 64
+print(age)
+```
+
+3.  **First, create a script to create a vector object of gene expression values with following values:**
+
+    `KRAS   = 4554`\
+    `TP53   = 38`\
+    `SMAD4  = 345`\
+    `CDKN2A = 129`\
+    `MYC    = 85`\
+    `EGFR   = 135`\
+    `MKI67  = NA`\
+    `CDH1   = 73`\
+    `VIM    = NA`\
+    `EPCAM  = 900`\
+    `KRT19  = 40`\
+    `GATA6  = NA`\
+
+```{r}
+gene_expr <- c(KRAS = 4554, TP53 = 38, SMAD4  = 345, CDKN2A = 129, MYC = 85, EGFR = 135, MKI67 = NA, CDH1 = 73, VIM = NA, EPCAM = 900, KRT19  = 40, GATA6  = NA)
+gene_expr
+```
+
+**From the vector object you created:**
+
+* Pull out the genes with expression higher than 100 counts
+
+```{r}
+gene_expr[gene_expr > 100]
+#gene_expr[!is.na(gene_expr) & gene_expr > 100]
+#gene_expr[which(gene_expr > 100)]
+```
+
+* Return the names of the top 3
+
+```{r}
+sort(gene_expr, decreasing = TRUE, na.last = TRUE)
+```
+
+* Count the `NA`s
+
+```{r}
+sum(is.na(gene_expr))
+```
+
+* Pull out the values for `KRAS`, `TP53`, and `MYC`.
+
+```{r}
+gene_expr[c("KRAS", "TP53", "MYC")]
+```
+
+
+# 3.  Matrices & Dataframes
+
+### Key Takeaways
+
+* A matrix is 2D table of data where all of the data **is the same type**.
+* A dataframe is a 2D table of data where the data **can be made up of different types**.
+* A matrix is like a vector arranged into rows and columns.
+* A data frame's *columns* can each be a different type.
+* Both can have rownames and colnames, which you can index by.
+
+# Matrices
+
+### Type along:
+
+### Build a matrix from scratch
+
+**Build the basic matrix**
+
+```{r}
+
+```
+
+**Add row and column names**
+
+```{r}
+
+```
+
+**Index it by position and by name**
+
+```{r}
+
+```
+
+
+# Dataframes
+
+### Type along:
+
+### Build a data frame from scratch
+
+```{r}
+
+```
+
+#### Index with [row, column]
+
+```{r}
+
+```
+
+#### Index using $
+
+```{r}
+
+```
+
+#### Create a new column based on the output from if/else statement
+
+```{r}
+
+```
+
+#### Change rownames
+
+```{r}
+
+```
+
+
+## Exercise 2.1: Working with a gene x sample matrix
+
+```{r}
+
+```
+
+### a) Pull out the whole KRAS row
+
+```{r}
+
+```
+
+### b) Pull out the whole S3 column
+
+```{r}
+
+```
+
+### c) What is the MYC value in sample S4?
+
+```{r}
+
+```
+
+
+### d) Which gene has the highest value in S1?
+
+(Hint: look at the column first, then think about which function finds a
+max.)
+
+```{r}
+
+```
+
+
+## Exercise 2.2: Factorizing a column in a data frame
+
+```{r}
+
+```
+
+
+# BREAK
+
+# 4. Loops: *if/else* and *for* 
+
+### Key Takeaways
+
+* if (condition) { ... } else { ... } runs code based on a TRUE/FALSE condition.
+* for (item in collection) { ... } repeats code once per item.
+
+### Type along:
+
+### *if/else* loop on a single value
+
+```{r}
+
+```
+
+> Change age to 40 and re-run to show that it works.
+
+### *for* loop over patient IDs that prints each one's stage
+
+```{r}
+# cohort <- data.frame(
+#   patient_id = c("PT-001", "PT-002", "PT-003", "PT-004"),
+#   stage      = c("IV", "IIA", "III", "IV")
+# )
+```
+
+**Using the cohort dataframe created earlier:**
+
+```{r}
+
+```
+
+
+## Exercise 2.3: Classify patients in a loop
+
+```{r}
+
+```
+
+### For each age, print "senior" if \>= 65, otherwise "adult"
+
+```{r}
+
+```
+
+> Expected output in order: adult, senior, adult, senior, adult.
+
+# 5. Writing functions
+
+### Key Takeaways
+
+* function(arguments) { body } creates a function. \*\* The last line evaluated is what gets returned (or use return() explicitly).
+* Give arguments sensible defaults when there's an obvious one, e.g. na.rm = TRUE.
+* stop("message") halts the function with a clear error -- much easier to debug later than just failing.
+
+### Type along:
+
+### write a function that classifies a single age as "senior" or "adult"
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+
+# Exercise 2.5:
+
+### Write a functions called summarize_numeric()
+
+**Write function that takes a numeric vector x as input and returns a named vector with its mean, standard deviation (sd), length (n), and number of NAs. If x is not numeric, it should stop() with a an error message.**
+
+```{r}
+
+```
+
+### Test it:
+
+```{r}
+
+```
+
+```{r error=TRUE}
+
+```
+
+
+# 6. Packages
+
+### Key Takeaways
+
+* library(pkg) loads a package you've already installed.
+* pkg::function() calls a function from a package WITHOUT loading the whole package -- useful to avoid name clashes.
+* CRAN: the general-purpose R package repository (install.packages()).
+* Bioconductor: a separate repository for genomics/bioinformatics packages (installed with BiocManager::install()).
+* GitHub: packages not (yet) on either, installed with devtools::install_github() or remotes::install_github().
+
+### Type along:
+
+### library(`package`) vs `package`::`function`
+
+The library() function loads a package that is installed, but the :: operator can be used to use a function from the package even if it hasn't been loaded.
+
+```{r}
+
+```
+
+
+```{r}
+
+```
+
+
+# 7. Reading in tabular data
+
+### Key Takeaways
+
+* read_csv() / read_tsv() (from readr) and read_excel() (from readxl) are generally more effective than base R's read.csv(), read.table(), or read.delim().
+* Useful arguments: delim/sep, skip, comment, na, col_types. problems(x) shows you any parsing issues readr spotted. 
+* Always check column types after reading -- a number read as text is one of the most common silent bugs.
+
+### Type along:
+
+### Read in data/expression_counts.tsv
+
+```{r}
+
+```
+
+### Look at the object
+
+```{r}
+
+```
+
+### Type along:
+
+### Make the `gene` column the rownames and the data as doubles
+
+```{r}
+
+```
+
+### Type along:
+
+### Read in data/clinical_raw.csv
+
+```{r}
+
+```
+
+### Look at the object
+
+```{r}
+
+```
+
+
+### Type along:
+
+### Read in data/clinical_raw.csv
+
+**Use na = c(...) so missing-value codes are recognized, and compare the
+column types**
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+
+# Exercise 2.6:
+
+### Read in three messy files.
+
+**Files are in the data directory:**
+
+* hw2_semicolon_decimalcomma.csv
+* hw2_cbioportal_style.tsv 
+* hw2_header_on_row3.xlsx
+
+#### a) hw2_semicolon_decimalcomma.csv
+
+**Semicolon-delimited with commas for decimals (European convention).**
+
+Which read function from readr is built for exactly this?
+
+```{r}
+
+```
+
+
+#### b) hw2_cbioportal_style.tsv
+
+**Tab-delimited with 4 lines of # comments before the header**
+
+What argument tells read_tsv to skip lines starting with #?
+
+```{r}
+
+```
+
+
+#### c) hw2_header_on_row3.xlsx
+
+**Excel file with a title on row 1, a blank row 2, and the real header
+on row 3**
+
+How many rows do you need to skip?
+
+```{r}
+
+```
+
+
+# 8. Wrap-up
+
+* A matrix holds one type; a data frame's columns can each differ.
+* A function's arguments only exist inside the function; nothing you do to them there changes anything outside.
+* read.csv() (base R) and read_csv() (readr) are NOT the same -- be familiar with the differences.
+* Always check column types after reading in a file, especially if you suspect "Unknown" or "N/A" values.
+
+## Go over Homework 2
