@@ -68,8 +68,7 @@ output:
 ```
 
 
-> count(x) is shorthand for group_by(x) %>% summarise(n = n()).
-> Build the pipe one step at a time, running after each line, so learners see what each verb contributes.
+
 
 # Type along: group_by() + summarise()
 ```{r}
@@ -92,14 +91,13 @@ clin %>%
 
 ```
 
-> Answer: 10 rows.
+
 
 #### c) The 3 oldest patients
 ```{r}
 
 ```
 
-> Common mistake: forgetting desc() and getting the youngest.
 
 
 # 2. Cleaning messy columns
@@ -118,7 +116,6 @@ clin %>%
 ```
 
 
-> Answer to the hook from section 1: 62 rows became 60. Two patients were listed twice, exactly.
 
 ### Type along: Messy patient IDs with stringr
 ```{r}
