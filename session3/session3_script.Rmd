@@ -82,8 +82,7 @@ output:
 
 #### a) Keep only patient_id, age_at_dx, and treatment_arm
 ```{r}
-clin %>% 
-  select(patient_id, age_at_dx, treatment_arm)
+
 ```
 
 #### b) Print out all patients older than 70
