@@ -1,0 +1,315 @@
+---
+title: "Session 3"
+date: "October 21, 2026"
+subtitle: "Data Wrangling: Tidyverse, REGEX, and Joining"
+output: 
+  html_document
+---
+
+
+# Setup
+### Load packages
+```{r}
+
+```
+
+
+
+# 1.  Review 
+
+# Select one or two problems to go over
+
+# 1. Tidyverse 
+
+## *dplyr* and *stringr*
+
+### Key Takeaways
+* The *dplyr* package contains functions to operate on the structure of a dataframe.
+  * select(): choose columns
+  * filter(): choose rows
+  * arrange(): sort rows
+  * mutate(): make or change columns
+  * summarise(): collapse rows into a summary
+  * group_by() + summarise(): computes a summary per group
+  
+* The *stringr* package contains functions to operate on strings.
+  * str_to_lower(): change all strings to lower case
+  * str_to_upper(): change all strings to upper case
+  * str_replace(): replaces the **first** occurence of a given string with a replacement
+  * str_replace_all(): replaces **all** occurences of a given string with a replacement
+  * str_remove(): removes a given string
+  * str_trim(): removes white space from beginning and end of strings
+  
+* Pipe operator: %>% -> passes the result from the function on the left as input to the function on the right. Read it as "and then". 
+
+### Load data object
+```{r}
+
+```
+
+### Modify column names
+```{r}
+
+```
+
+
+
+### Type along: 
+### How big is this data? select() columns, filter() rows
+```{r}
+
+```
+
+
+
+### Type along: *arrange()* and *mutate()*
+```{r}
+
+```
+
+
+> count(x) is shorthand for group_by(x) %>% summarise(n = n()).
+> Build the pipe one step at a time, running after each line, so learners see what each verb contributes.
+
+# Type along: group_by() + summarise()
+```{r}
+
+```
+
+
+
+### Exercise 3.1: dplyr practice
+**Use the `clin` dataframe we've already created**
+
+#### a) Keep only patient_id, age_at_dx, and treatment_arm
+```{r}
+clin %>% 
+  select(patient_id, age_at_dx, treatment_arm)
+```
+
+#### b) Print out all patients older than 70
+```{r}
+
+```
+
+> Answer: 10 rows.
+
+#### c) The 3 oldest patients
+```{r}
+
+```
+
+> Common mistake: forgetting desc() and getting the youngest.
+
+
+# 2. Cleaning messy columns
+
+### Key takeaways
+* Cleaning = making every value that means the same thing look the same.
+  * Do it in a pipeline so every step is written down.
+* distinct(): removes duplicate rows.
+* str_detect(): looks for the given pattern and returns a TRUE/FALSE conditional vector
+* case_when() recodes values: condition ~ new value, tried in order.
+* lubridate parses dates written in different formats.
+
+### Type along: duplicates
+```{r}
+
+```
+
+
+> Answer to the hook from section 1: 62 rows became 60. Two patients were listed twice, exactly.
+
+### Type along: Messy patient IDs with stringr
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+
+```{r}
+
+```
+
+
+#### Note: read_csv() already trims stray spaces, so str_trim() changes nothing here. Base read.csv() would not do this.
+
+**The REGEX "function" we used today, in plain words:**
+* ^ : start of the text OR a negation operator, i.e., "everything but ...", when used inside brackets
+* $ : end of the text
+* PT : the letters PT 
+* -? : an *optional* dash. The ? designates this
+* (\\d+) : one or more digits, remembered as a group
+  * The double backslash is an R quirk: a regex \d is written "\\d"
+* \\1 : "put the remembered group back here".
+* **REGEX is a tool you can look up", don't worry about mastering it.**
+
+### Type along: recode `sex` with case_when()
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+
+### Type along: recode `stage` with case_when() 
+**`stage` has two kinds of mess (a "Stage " prefix, and 2A/3/4 written in a different system)**
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+```
+
+
+
+### Exercise 3.2: Recode KRAS status and vital status
+
+#### a) Find values for kras_status
+```{r}
+
+```
+
+
+# b) Change the spellings to make consistent
+```{r}
+
+```
+
+```{r}
+
+```
+
+
+
+
+# c) Make a logical column `died`: TRUE for "dead" or "deceased" (any capitalization), FALSE otherwise
+```{r}
+
+```
+
+```{r}
+
+```
+
+
+### Type along: dates with lubridate
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+**NOTES**
+* parse_date_time() returns date-times (it prints "UTC"), which is why the mutate adds as_date() to keep just the date.
+* Letters mean parts of a date: Y = year, m = month number, d = day, b = abbreviated month name. "Ymd" = year-month-day.
+* THE trap: 03/04/2019 is March 4 in the US and April 3 in Europe, and R can't discern between these. 
+  * You have to know the convention of the source. 
+  * Here we picked month-first (mdY) because the data came from a US clinic.
+* Subtracting two dates gives days; dividing by 30.4375 (365.25/12) gives months. 
+* Expected summary: min 0.5, median about 19, max about 80.
+
+
+### Exercise 3.3: Parse these dates
+```{r}
+
+```
+
+
+
+#### Fill in the orders: year-month-day, month-day-year, day-abbreviated month-year
+```{r}
+
+```
+
+# Type along: keep the tidy columns, in a sensible order, as clin_clean
+```{r}
+
+```
+
+
+
+
+# 3. Joins
+### Key takeaways
+* A join combines two tables using a shared "key" column.
+* left_join(a, b) keeps ALL rows of a and adds matching info from b.
+* inner_join(a, b) keeps only rows that match in BOTH.
+* anti_join(a, b) keeps rows of a that have NO match in b: the way to find keys that failed to match.
+* Always compare row counts before and after a join.
+
+### Type along: read the sample sheet and look at it
+```{r}
+
+```
+
+```{r}
+
+```
+
+
+
+
+# Type along: left_join, and check the row counts
+```{r}
+
+```
+
+```{r}
+
+```
+
+
+# Type along: who failed to match, in each direction?
+```{r}
+
+```
+
+```{r}
+
+```
+
+
